@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_bottom_sheet_dialog_fragment"
+    android:elevation="16dp"
+    android:orientation="vertical"
+    android:paddingBottom="20dp">
+
+    <View
+        android:id="@+id/lineUpDown"
+        android:layout_width="30dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/bg_lineup_down"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_Titile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/payment_detail"
+        android:textColor="#FF8830"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lineUpDown" />
+
+    <TextView
+        android:id="@+id/textView_Titile_ServiceType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="Service Type"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@+id/textView_Titile"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Titile" />
+
+    <TextView
+        android:id="@+id/textView_Title_Detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="Detail"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@+id/textView_Titile_ServiceType"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Titile_ServiceType" />
+
+    <TextView
+        android:id="@+id/textView_Title_Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="Price"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@+id/textView_Title_Detail"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Title_Detail" />
+
+    <TextView
+        android:id="@+id/textView_Title_Fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="Fee"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@+id/textView_Title_Price"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Title_Price" />
+
+    <TextView
+        android:id="@+id/textView_Title_Total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="Total"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView_Title_Fee"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Title_Fee" />
+
+    <!--  content  -->
+    <TextView
+        android:id="@+id/textView_Content_ServiceType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_Titile_ServiceType"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView_Titile_ServiceType"
+        android:text="WATER" />
+
+    <TextView
+        android:id="@+id/textView_Content_Detail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_Title_Detail"
+        app:layout_constraintEnd_toEndOf="@+id/textView_Content_ServiceType"
+        app:layout_constraintTop_toTopOf="@+id/textView_Title_Detail"
+        android:text="000791486 Gregory Mccoy" />
+
+    <TextView
+        android:id="@+id/textView_Content_Price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_Title_Price"
+        app:layout_constraintEnd_toEndOf="@+id/textView_Content_Detail"
+        app:layout_constraintTop_toTopOf="@+id/textView_Title_Price"
+        android:text="Rp 38.141" />
+
+    <TextView
+        android:id="@+id/textView_Content_Fee"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_Title_Fee"
+        app:layout_constraintEnd_toEndOf="@+id/textView_Content_Price"
+        app:layout_constraintTop_toTopOf="@+id/textView_Title_Fee"
+        android:text="Rp 2.500" />
+
+    <TextView
+        android:id="@+id/textView_Content_Total"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_Title_Total"
+        app:layout_constraintEnd_toEndOf="@+id/textView_Content_Fee"
+        app:layout_constraintTop_toTopOf="@+id/textView_Title_Total"
+        android:text="Rp. 40.641" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

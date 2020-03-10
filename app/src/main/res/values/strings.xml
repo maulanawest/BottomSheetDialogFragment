@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BottomSheetDialogFragment</string>
+    <string name="payment_detail">Payment Detail</string>
+</resources>
