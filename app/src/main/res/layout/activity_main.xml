@@ -189,6 +189,46 @@
         app:layout_constraintTop_toTopOf="@+id/imageView_ractangle2"
         android:layout_marginRight="20dp" />
 
+    <LinearLayout
+        android:id="@+id/linearLayout_Select"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/outline_stroke_gray"
+        android:orientation="horizontal"
+        android:padding="2sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Content_info2">
+
+        <ImageView
+            android:id="@+id/imageView_Icon_Bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/ic_bank_mandiri"
+            android:visibility="visible"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="15dp" />
+
+        <EditText
+            android:id="@+id/editText_Select_Method"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:padding="10dp"
+            android:drawableEnd="@drawable/ic_arrow_next_small"
+            android:gravity="start"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:hint="Pilih Metode pembayaran"
+            android:textSize="11sp"
+            android:drawableRight="@drawable/ic_arrow_next_small" />
+    </LinearLayout>
+
     <Button
         android:id="@+id/button_Pay"
         android:layout_width="match_parent"

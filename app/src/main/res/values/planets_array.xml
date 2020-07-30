@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="planets_array">
+        <item>1. Login Mandiri Online dengan memasukkan username dan password</item>
+        <item>2. Pilih menu “pembayaran”</item>
+        <item>3. Pilih menu “Multipayment” </item>
+        <item>4. Masukan “nomor virtual account” dan “nominal” yang akan dibayarkan, lalu pilih lanjut</item>
+        <item>5. Setelah muncul tagihan, pilih konfirmasi</item>
+        <item>6. Masukan PIN atau kode token</item>
+        <item>7. Transaksi selesai, simpan bukti pembayaran Anda</item>
+        <item>8. Jangan gunakan fitur “simpan daftar transfer” untuk pembayaran melalui internet banking karena dapat menggangu proses pembayaran berikutnya</item>
+
+        <item>Untuk menghapus daftar transfer tersimpan ikuti langkah berikut:</item>
+        <item>1. Login mandiri online</item>
+        <item>2. pilih menu pembayaran</item>
+        <item>3. pilih menu daftar pembayaran</item>
+        <item>4. pilih pada pembayaran yang tersimpan, lalu pilih menu untuk hapus</item>
+    </string-array>
+</resources>
